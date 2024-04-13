@@ -1,0 +1,40 @@
+{
+  "name": "swagger-tsconfig-paths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  -r tsconfig-paths/register -r ts-node/register src/index.ts"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm run start",
+    "ext": "ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "swagger-jsdoc": "^6.2.8"
+  }
+}
